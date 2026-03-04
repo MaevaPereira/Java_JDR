@@ -1,5 +1,7 @@
 package dnd;
 
+import dnd.character.Warrior;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -49,4 +51,11 @@ public class Menu {
         System.out.println("Enter your name");
         return scanner.nextLine();
     }
+/*
+    public String getCharacter() {
+        System.out.println(Warrior.getCharacter());
+        return scanner.nextLine();
+    }
+*/
 }
+

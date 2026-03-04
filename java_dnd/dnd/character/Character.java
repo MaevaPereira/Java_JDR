@@ -10,9 +10,13 @@ public class Character {
     private int lvlAttack;
     private OffensiveEquipment offensiveEquipment;
 
-    public Character(String name, String type) {
+    public Character(String name, String type, int hp, int lvlAttack, OffensiveEquipment offensiveEquipment) {
         this.name = name;
         this.type = type;
+        this.hp = hp;
+        this.lvlAttack = lvlAttack;
+        this.offensiveEquipment = offensiveEquipment;
+
     }
 
     //@Override

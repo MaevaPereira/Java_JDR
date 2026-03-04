@@ -24,6 +24,7 @@ public class Game {
         while (!menu.mainMenu()) {
             String type = menu.getType();
             String name = menu.getName();
+
             initGame(type, name);
             while (!checkWin()) {
                 loop();
