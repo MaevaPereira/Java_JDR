@@ -9,6 +9,7 @@ public abstract class Character {
     private int lvlAttack;
     private OffensiveEquipment offensiveEquipment;
 
+    // Constructeur
     public Character(String name, String type, int hp, int lvlAttack, OffensiveEquipment offensiveEquipment) {
         this.name = name;
         this.type = type;
@@ -17,6 +18,7 @@ public abstract class Character {
         this.offensiveEquipment = offensiveEquipment;
     }
 
+    // Retourne un résumé formaté des statistiques du personnage
     public String statsHero() {
         return " Name: "+ name +System.lineSeparator()
                 +" Class: "+ type +System.lineSeparator()
@@ -27,5 +29,5 @@ public abstract class Character {
     }
 
     @Override
-    public String toString() {return "\uD81A\uDE06";}
+    public String toString() {return "\uD83E\uDDD9\u200D♂\uFE0F";}
 }

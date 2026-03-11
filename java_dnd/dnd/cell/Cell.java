@@ -12,5 +12,7 @@ public abstract class Cell {
         return content;
     }
 
+     @Override
+    public String toString() { return "O"; }
 }
 

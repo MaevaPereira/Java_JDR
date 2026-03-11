@@ -5,4 +5,9 @@ public class CellPotion extends dnd.cell.Cell {
     {
         super("potion found");
     }
+
+
+    @Override
+    public String toString() {return "potion found";}
+
 }

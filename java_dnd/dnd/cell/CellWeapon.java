@@ -5,4 +5,10 @@ public class CellWeapon extends dnd.cell.Cell {
     {
         super("weapon found");
     }
+
+
+    @Override
+    public String toString() {return "weapon found";}
+
+
 }

@@ -5,4 +5,10 @@ public class CellEnemy extends dnd.cell.Cell {
     {
         super("Enemy here");
     }
+
+
+    @Override
+    public String toString() {return "Enemy here";}
+
+
 }

@@ -41,7 +41,7 @@ public class Menu {
         }
     }
 
-    public String getType() {
+    public String getType(String name) {
         System.out.println("""
         Choose a class:
         -Wizard 🧙‍♂️
@@ -52,10 +52,10 @@ public class Menu {
         String choice = scanner.nextLine(); // on stocke le choix
 
         if (choice.equals("Wizard")) {
-            Wizard player = new Wizard(getName());
+            Wizard player = new Wizard(name);
             System.out.println(player.statsHero());
         } else if (choice.equals("Warrior")) {
-            Warrior warrior = new Warrior(getName());
+            Warrior warrior = new Warrior(name);
             System.out.println(warrior.statsHero());
         }
         return choice;
