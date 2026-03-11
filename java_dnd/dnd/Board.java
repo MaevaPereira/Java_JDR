@@ -44,13 +44,21 @@ public class Board {
     }
 
     public void boardCell(String[] args) {
-        ArrayList<Cell> cells = new ArrayList<>();
+        ArrayList<Cell> cells = new ArrayList<Cell>();
         cells.add(0,new CellEmpty("empty cell"));
         cells.add(1,new CellEmpty("empty cell"));
         cells.add(2, new CellEnemy("enemy"));
         cells.add(3, new CellWeapon("weapon"));
         cells.add(4, new CellPotion("potion"));
-        System.out.println("content:" + cells);
+        //System.out.println("content:" + cells);
+        System.out.println(cells.get(0));
+        System.out.println(cells.get(1));
+        System.out.println(cells.get(2));
+        System.out.println(cells.get(3));
+        System.out.println(cells.get(4));
+
+       // cells.set(1, "empty cell");
+
     }
 
     public void playTurn(){

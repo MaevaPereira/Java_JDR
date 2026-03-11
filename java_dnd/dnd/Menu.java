@@ -1,6 +1,9 @@
 package dnd;
 
+import dnd.character.Character;
 import dnd.character.Warrior;
+import dnd.character.Wizard;
+import dnd.equipment.offensive.Spell;
 
 import java.util.Scanner;
 
@@ -41,21 +44,27 @@ public class Menu {
     public String getType() {
         System.out.println("""
         Choose a class:
-        -Wizard
+        -Wizard 🧙‍♂️
         -Warrior
         """);
-        return scanner.nextLine();
+        //return scanner.nextLine();
+
+        String choice = scanner.nextLine(); // on stocke le choix
+
+        if (choice.equals("Wizard")) {
+            Wizard player = new Wizard(getName());
+            System.out.println(player.statsHero());
+        } else if (choice.equals("Warrior")) {
+            Warrior warrior = new Warrior(getName());
+            System.out.println(warrior.statsHero());
+        }
+        return choice;
     }
 
     public String getName() {
         System.out.println("Enter your name");
         return scanner.nextLine();
-    }
-/*
-    public String getCharacter() {
-        System.out.println(Warrior.getCharacter());
-        return scanner.nextLine();
-    }
-*/
-}
 
+    }
+
+}

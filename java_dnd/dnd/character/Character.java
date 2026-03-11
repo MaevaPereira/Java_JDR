@@ -1,8 +1,7 @@
 package dnd.character;
+import dnd.equipment.offensive.OffensiveEquipment;
 
-import dnd.equipment.OffensiveEquipment;
-
-public class Character {
+public abstract class Character {
 
     private String name;
     private String type;
@@ -16,11 +15,17 @@ public class Character {
         this.hp = hp;
         this.lvlAttack = lvlAttack;
         this.offensiveEquipment = offensiveEquipment;
-
     }
 
-    //@Override
-    public String toString() {
-        return "H";
+    public String statsHero() {
+        return " Name: "+ name +System.lineSeparator()
+                +" Class: "+ type +System.lineSeparator()
+                +" Hp: "+ hp +System.lineSeparator()
+                +" Attack: "+ lvlAttack +System.lineSeparator()
+                +System.lineSeparator()
+                +" Equipment: "+ offensiveEquipment;
     }
+
+    @Override
+    public String toString() {return "\uD81A\uDE06";}
 }
