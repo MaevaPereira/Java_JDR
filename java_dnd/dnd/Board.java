@@ -1,5 +1,9 @@
 package dnd;
 
+import dnd.cell.*;
+
+import java.util.ArrayList;
+
 public class Board {
 
     private Object[] board;
@@ -37,6 +41,20 @@ public class Board {
             }
         }
         System.out.println();
+    }
+
+    public void boardCell(String[] args) {
+        ArrayList<Cell> cells = new ArrayList<>();
+        cells.add(0,new CellEmpty("empty cell"));
+        cells.add(1,new CellEmpty("empty cell"));
+        cells.add(2, new CellEnemy("enemy"));
+        cells.add(3, new CellWeapon("weapon"));
+        cells.add(4, new CellPotion("potion"));
+        System.out.println("content:" + cells);
+    }
+
+    public void playTurn(){
+
     }
 
 }
