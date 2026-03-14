@@ -44,7 +44,7 @@ public class Game {
             String type = menu.getType(name); // Récupère "Warrior" ou "Wizard"
             initGame(type, name); // Prépare le plateau et crée le personnage
             while (!checkWin()) {
-                loop();
+                playTurn();
             }
             System.out.println("You saved the world from the evil Empress");
         }
@@ -84,12 +84,12 @@ public class Game {
     }
 
     // Un tour de jeu :
-    public void loop() {
-        int roll = dice.roll(40);
+    public void playTurn() {
+        int roll = dice.roll(1);
         try {
             moveCharacter(roll); // Déplace le personnage du résultat obtenu au dé
-        } catch (OutOfBoardException e) {
-            System.out.println(e.getMessage()); // 👈 si ça plante, on attrape
+        } catch (OutOfBoardException erreur) {
+            System.out.println(erreur.getMessage()); // si ça plante => attrape
             characterPosition = board.size() - 1; // on remet sur la dernière case
         }
         this.scanner.nextLine(); // Pause : attend que le joueur appuie sur Entrée
