@@ -1,14 +1,12 @@
 package dnd.cell;
 
-public class CellWeapon extends dnd.cell.Cell {
-    public CellWeapon(String content)
-    {
-        super("weapon found");
+public class CellWeapon extends Cell {
+    public CellWeapon() {
     }
 
 
     @Override
-    public String toString() {return "weapon found";}
+    public String toString() {return " |\uD83D\uDDE1\uFE0F| ";}
 
 
 }

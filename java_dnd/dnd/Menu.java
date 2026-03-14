@@ -45,7 +45,7 @@ public class Menu {
         System.out.println("""
         Choose a class:
         -Wizard 🧙‍♂️
-        -Warrior
+        -Warrior 🥷🏻
         """);
         //return scanner.nextLine();
 

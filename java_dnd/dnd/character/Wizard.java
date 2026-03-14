@@ -7,4 +7,6 @@ public class Wizard extends Character {
     public Wizard(String name) {
         super(name, "Wizard", 6, 8, new Spell("bâton", 2, "sceptre"));
     }
+
+    public String toString() {return "\uD83E\uDDD9\uD83C\uDFFC\u200D♂\uFE0F";}
 }

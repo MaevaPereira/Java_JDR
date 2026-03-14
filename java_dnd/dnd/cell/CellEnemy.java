@@ -1,14 +1,12 @@
 package dnd.cell;
 
-public class CellEnemy extends dnd.cell.Cell {
-    public CellEnemy(String content)
-    {
-        super("Enemy here");
+public class CellEnemy extends Cell {
+    public CellEnemy() {
     }
 
 
     @Override
-    public String toString() {return "Enemy here";}
+    public String toString() {return " |\uD83D\uDC7E| ";}
 
 
 }

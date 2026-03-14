@@ -29,5 +29,5 @@ public abstract class Character {
     }
 
     @Override
-    public String toString() {return "\uD83E\uDDD9\u200D♂\uFE0F";}
+    public String toString() {return "none";}
 }

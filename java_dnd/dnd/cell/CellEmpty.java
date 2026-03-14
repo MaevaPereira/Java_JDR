@@ -1,11 +1,10 @@
 package dnd.cell;
 
-public class CellEmpty extends dnd.cell.Cell {
-    public CellEmpty(String content){super("empty cell");}
+public class CellEmpty extends Cell {
+    public CellEmpty() {
+    }
 
 
     @Override
-    public String toString() {return "empty cell";}
-
-
+    public String toString() {return " |☐| ";}
 }
