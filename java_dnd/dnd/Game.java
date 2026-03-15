@@ -89,7 +89,7 @@ public class Game {
         try {
             moveCharacter(roll); // Déplace le personnage du résultat obtenu au dé
         } catch (OutOfBoardException erreur) {
-            System.out.println(erreur.getMessage()); // si ça plante => attrape
+            System.out.println(erreur.getMessage()); // si ça plante => catch
             characterPosition = board.size() - 1; // on remet sur la dernière case
         }
         this.scanner.nextLine(); // Pause : attend que le joueur appuie sur Entrée
